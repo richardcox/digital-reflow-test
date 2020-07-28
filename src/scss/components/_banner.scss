@@ -1,0 +1,32 @@
+.ms-banner {
+  img {
+    display: block;
+  }
+}
+
+#ms-extra-curriculum {
+  h2 {
+    color: $secondary-color;
+  }
+}
+#ms-head-coach {
+  > .container {
+    background-color: $secondary-color;
+  }
+
+  #ms-banner-text {
+    padding: 0px 70px;
+    h2 {
+      margin: 0;
+      font-size: 50px;
+      line-height: 1;
+    }
+    h3 {
+      color: $primary-color;
+    }
+  }
+
+  #ms-banner-img {
+    padding-right: 0;
+  }
+}

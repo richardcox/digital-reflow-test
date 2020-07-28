@@ -1,0 +1,125 @@
+#ms-our-activities {
+  padding: 70px 0px;
+  h2 {
+    margin: 0;
+    font-size: 95px;
+    font-weight: 800;
+  }
+
+  p.ms-description {
+    margin: auto;
+    max-width: 650px;
+  }
+  #carousel {
+    transform: scale(1.1);
+  }
+  .slider-item {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(0.7);
+    transition: all 0.4s;
+
+    &:active,
+    &:focus {
+      outline: 0;
+    }
+
+    p.ms-slide-label {
+      position: relative;
+      width: 100%;
+      margin-top: -40px;
+      opacity: 0;
+      text-align: center;
+      color: $secondary-color;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    &.slick-center {
+      transform: scale(1);
+
+      svg {
+        padding: 0;
+      }
+      p {
+        opacity: 1;
+      }
+
+      .ms-slick-image-wrap {
+        .ms-slick-image-bg {
+          fill: $primary-color;
+        }
+        .ms-slick-image {
+          fill: $secondary-color;
+        }
+      }
+    }
+  }
+  .ms-slick-image-wrap {
+    position: relative;
+    width: 100%;
+
+    .ms-slick-image-bg {
+      width: 100%;
+      fill: $secondary-color;
+    }
+    .ms-slick-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      fill: $primary-color;
+    }
+  }
+
+  /** Arrows */
+  #ms-slider-arrows {
+    position: relative;
+    width: 20%;
+    margin: auto;
+    margin-top: -45px;
+
+    button {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      border: solid 1px $secondary-color;
+      border-radius: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30%;
+      background-color: transparent;
+      cursor: pointer;
+      transition: all 0.4s;
+      &:active,
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      &.prev {
+        left: 0;
+        background-image: url(../images/svg/chevrons-left.svg);
+      }
+      &.next {
+        right: 0;
+        background-image: url(../images/svg/chevrons-right.svg);
+      }
+    }
+  }
+
+  .ms-cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 25px;
+    background-color: $secondary-color;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,108 @@
+#ms-hero {
+  position: relative;
+  width: 100%;
+
+  h1 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  > .container {
+    position: relative;
+    z-index: 1;
+
+    > .row {
+      position: relative;
+      height: calc(100vh - 50px);
+      padding-top: 80px;
+      z-index: 1;
+
+      img,
+      .ms-hero-image-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        left: 15%;
+        z-index: 1;
+      }
+
+      img {
+        opacity: 0;
+      }
+      .ms-hero-image-bg {
+        margin-right: -200px;
+        background: url(../images/home_banner.jpg) no-repeat center right;
+        background-size: cover;
+      }
+    }
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+  }
+
+  &:before {
+    left: 0;
+    background-color: $primary-color;
+  }
+  &:after {
+    right: 0;
+    background-color: $secondary-color;
+  }
+
+  #ms-discover-more {
+    position: absolute;
+    width: calc(50% - 400px);
+    height: 80px;
+    bottom: 0;
+    right: 0;
+    background-color: $white;
+    z-index: 1;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 600;
+    cursor: pointer;
+
+    .ms-discover-more-content {
+      height: 80px;
+      display: flex;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      align-items: center;
+
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    .ms-skew-side {
+      display: inline-block;
+      width: 75px;
+      height: 100%;
+      margin-top: 5px;
+      margin-left: -50px;
+      -moz-transform: translate(-5px, -5px) skew(-24deg, 0deg);
+      -webkit-transform: translate(-5px, -5px) skew(-24deg, 0deg);
+      -o-transform: translate(-5px, -5px) skew(-24deg, 0deg);
+      -ms-transform: translate(-5px, -5px) skew(-24deg, 0deg);
+      transform: translate(-5px, -5px) skew(-24deg, 0deg);
+      background-color: $white;
+    }
+  }
+
+  .ms-hero-text-cell {
+    z-index: 2;
+    * {
+      color: $white;
+    }
+  }
+}

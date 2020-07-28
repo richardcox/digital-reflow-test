@@ -1,0 +1,65 @@
+#ms-get-in-touch {
+  padding: 70px 0px;
+  h2 {
+    margin: 0;
+    font-size: 72px;
+  }
+  form {
+    max-width: 800px;
+    margin: auto;
+
+    p {
+      margin-bottom: 50px;
+      color: $secondary-color;
+    }
+
+    .ms-contant-details {
+      margin: 0;
+      color: $secondary-color;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 24px;
+      .slash {
+        margin-left: 10px;
+        margin-right: 10px;
+        color: $primary-color;
+      }
+    }
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      border: solid 1px #707070;
+      transition: border-color 0.4s;
+      font-family: "Kanit", sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      &:focus {
+        outline: 0;
+        border-color: $primary-color;
+      }
+    }
+
+    input {
+      height: 50px;
+    }
+
+    textarea {
+      height: 165px;
+    }
+
+    button {
+      display: block;
+      padding: 15px 30px;
+      margin: auto;
+      margin-top: 20px;
+      border: none;
+      background-color: $primary-color;
+      font-weight: 600;
+    }
+  }
+}

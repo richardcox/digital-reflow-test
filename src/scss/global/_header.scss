@@ -1,0 +1,42 @@
+#ms-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+
+  .row {
+    height: 100px;
+  }
+
+  nav {
+    text-align: right;
+    ul {
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+
+      a {
+        padding: 10px 30px;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        border: solid 1px transparent;
+        transition: border-color 0.4s;
+
+        &:hover {
+          border-color: $white;
+        }
+      }
+
+      &:last-child {
+        a {
+          border: solid 1px $white;
+        }
+      }
+    }
+  }
+}

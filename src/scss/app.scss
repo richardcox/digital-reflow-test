@@ -1,0 +1,83 @@
+@charset 'utf-8';
+
+@import "includes/bootstrap-grid";
+
+/** 
+MultiSports custom styles 
+*/
+
+@import "includes/variables";
+
+/** Globals styles */
+@import "global/header";
+@import "global/footer";
+
+/** Components */
+@import "components/hero";
+@import "components/slider";
+@import "components/banner";
+@import "components/engage-features";
+@import "components/contact-block";
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Kanit", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ms-text-center {
+  text-align: center;
+}
+
+.ms-text-right {
+  text-align: right;
+}
+
+.ms-primary-bg {
+  background-color: $primary-color;
+}
+
+.ms-secondary-bg {
+  background-color: $secondary-color;
+}
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+section {
+  h2,
+  h3 {
+    color: $primary-color;
+  }
+  p {
+    color: $secondary-color;
+  }
+}
+
+.ms-secondary-bg {
+  h2,
+  h3,
+  p {
+    color: $white;
+  }
+}
+
+.ms-cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background-color: $secondary-color;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &:hover {
+    filter: brightness(85%);
+  }
+}

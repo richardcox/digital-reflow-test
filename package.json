@@ -1,0 +1,28 @@
+{
+  "name": "multisports-for-children",
+  "version": "1.0.0",
+  "description": "Technical test for Digital Reflow",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "author": "Richard Cox",
+  "dependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "private": true,
+  "browsers": [
+    "last 2 versions",
+    "ie >= 9"
+  ]
+}
